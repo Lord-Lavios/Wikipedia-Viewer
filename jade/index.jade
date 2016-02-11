@@ -1,0 +1,16 @@
+extends ./layout.jade
+
+block content
+	header
+		h2 Wikipedia Viewer
+	#container
+		#howmany
+			select#how(name = 'howData')
+				option(value='10') 10
+				option(value='20') 20
+				option(value='30') 30
+				option(value='40') 40
+		#search-bar
+			input(type='text' name='search' placeholder = 'Elon Musk', autocomplete = 'off')
+		#onlydiv
+			ul
