@@ -6,7 +6,7 @@ var beforeLimit = 10;
 var url;
 
 $(document).ready(function() {
-	setInterval(renew, 500);
+	setInterval(renew, 100);
 	function renew() {
 		search = $('input').val();
 		limit = $('#how :selected').text();
@@ -25,7 +25,7 @@ $(document).ready(function() {
 							+ '<a href=' + data[3][i] + ' target="_blank">'
 							+ '<h3>' + data[1][i] + '</h3>'
 							+ '<p>' + data[2][i] + '</p>'
-							+ '</a>' + '</li>').hide().fadeIn(900);
+							+ '</a>' + '</li>').hide().fadeIn(200);
 					}
 				}
 			});
